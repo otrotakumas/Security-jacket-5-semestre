@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/Logo.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/Logo.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/Logo.svg">
+    <link rel="icon" sizes="16x16" href="assets/img/Logo.svg">
+    <link rel="manifest" href="assets/img/manifest.json">
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Font Awesome core CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Header -->
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <!-- Name -->
+                    <div class="page-scroll site-logo">
+                        <a href="#top"><h7>SECURITY JACKET</h7></a>
+                    </div>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="page-scroll"><a href="index.html#top">Inicio (5to semestre)</a></li>
+                        <li class="page-scroll"><a href="4semestre.html">4to semestre</a></li>
+                        <li class="page-scroll"><a href="anterior.html">Entregas anteriores</a></li>
+                        <li class="page-scroll"><a href="index.html#intro">Objetivos</a></li>
+                        <li class="page-scroll"><a href="index.html#video">Promocional</a></li>
+                        <li class="page-scroll"><a href="index.html#services">Prototipo 5to</a></li>
+                        <li class="page-scroll"><a href="index.html#documento5">Documentación</a></li>
+                        <li class="page-scroll"><a href="index.html#sensoriños">Sensores TR</a></li>
+                        <li class="page-scroll"><a href="index.html#real">Codigo ESP32</a></li>
+                        
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+    <!-- End Header -->
+
+
+    <title>Dashboard Security Jacket - Firebase</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f0f2f5; }
+        h1 { color: #163a5f; text-align: center; margin-top: 30px; }
+        .info-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px; text-align: center; }
+        table { border-collapse: collapse; width: 100%; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        th, td { border: 1px solid #ccc; padding: 12px; text-align: center; font-size: 16px; }
+        th { background: #163a5f; color: white; }
+        .alerta-si { background-color: #ffcccc; color: #990000; font-weight: bold; }
+        .alerta-no { background-color: #d4edda; color: #155724; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Dashboard - Security Jacket (Firebase RTDB)</h1>
+    
+    <div class="info-card">
+        <p>Estado de conexión: <span id="estado-conexion" style="font-weight: bold; color: orange;">Conectando...</span></p>
+    </div>
+
+    <table>
+        <tr>
+            <th>Aceleración X</th>
+            <th>Aceleración Y</th>
+            <th>Aceleración Z</th>
+            <th>Fuerza (HX711)</th>
+            <th>Estado de Alerta</th>
+            <th>Latitud</th>
+            <th>Longitud</th>
+        </tr>
+        <tr>
+            <td id="val-accx">--</td>
+            <td id="val-accy">--</td>
+            <td id="val-accz">--</td>
+            <td id="val-fuerza">--</td>
+            <td id="val-alerta" class="alerta-no">Esperando datos...</td>
+            <td id="val-lat">--</td>
+            <td id="val-lon">--</td>
+        </tr>
+    </table>
+
+    <script>
+        // URL de tu base de datos de Firebase (con el .json al final)
+        const DATABASE_URL = "https://security-jacket-pt-default-rtdb.firebaseio.com/project/sensores/lecturaActual.json";
+
+        async function actualizarDashboard() {
+            try {
+                const response = await fetch(DATABASE_URL);
+                if (!response.ok) throw new Error("Error al conectar con Firebase");
+                
+                const data = await response.json();
+                
+                if (data) {
+                    // Actualizar valores de sensores
+                    document.getElementById('val-accx').textContent = data.aceleracionX !== undefined ? data.aceleracionX.toFixed(2) : '0.00';
+                    document.getElementById('val-accy').textContent = data.aceleracionY !== undefined ? data.aceleracionY.toFixed(2) : '0.00';
+                    document.getElementById('val-accz').textContent = data.aceleracionZ !== undefined ? data.aceleracionZ.toFixed(2) : '0.00';
+                    document.getElementById('val-fuerza').textContent = data.fuerza !== undefined ? data.fuerza.toFixed(2) : '0.00';
+
+                    // Actualizar Coordenadas GPS (con 6 decimales de precisión)
+                    document.getElementById('val-lat').textContent = data.latitud !== undefined ? data.latitud.toFixed(6) : '0.000000';
+                    document.getElementById('val-lon').textContent = data.longitud !== undefined ? data.longitud.toFixed(6) : '0.000000';
+
+                    // Estado de Alerta
+                    const celdaAlerta = document.getElementById('val-alerta');
+                    if (data.alertaImpacto === "¡SI!") {
+                        celdaAlerta.textContent = "¡ALERTA!";
+                        celdaAlerta.className = "alerta-si";
+                    } else {
+                        celdaAlerta.textContent = "Normal";
+                        celdaAlerta.className = "alerta-no";
+                    }
+
+                    document.getElementById('estado-conexion').textContent = "Conectado en tiempo real";
+                    document.getElementById('estado-conexion').style.color = "green";
+                } else {
+                    document.getElementById('estado-conexion').textContent = "Sin datos todavía en Firebase";
+                    document.getElementById('estado-conexion').style.color = "orange";
+                }
+            } catch (error) {
+                console.error(error);
+                document.getElementById('estado-conexion').textContent = "Error de conexión";
+                document.getElementById('estado-conexion').style.color = "red";
+            }
+        }
+
+        // Se actualiza automáticamente cada 3 segundos
+        setInterval(actualizarDashboard, 3000);
+        actualizarDashboard();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Security Jacket</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/Logo.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/Logo.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/Logo.svg">
+    <link rel="icon" sizes="16x16" href="assets/img/Logo.svg">
+    <link rel="manifest" href="assets/img/manifest.json">
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Font Awesome core CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <!-- Hero Section, Background Image change in css -->
+    <div id="top" class="hero background-overlay">
+    
+        <!-- Name & Description -->
+        <div class="hero-content">
+            <h1>Security Jacket</h1>
+            <p class="hero-job"><span>Primer Logo de Security Jacket</span></p>
+            <p class="hero-job-desc">imita una chaqueta que forma las inciales del nombre del proyecto.</p>
+
+        </div><!-- /.hero-content -->
+
+        <div class="hero-arrow page-scroll home-arrow-down">
+            <a class="" href="#intro"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+        </div><!-- /.hero-arrow -->
+
+    </div><!-- /.hero -->
+    <!-- End Hero -->
+
+    <!-- Header -->
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <!-- Name -->
+                    <div class="page-scroll site-logo">
+                        <a href="#top"><h7>SECURITY JACKET</h7></a>
+                    </div>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="page-scroll"><a href="#top">Inicio (5to semestre)</a></li>
+                        <li class="page-scroll"><a href="4semestre.html">4to semestre</a></li>
+                        <li class="page-scroll"><a href="anterior.html">Entregas anteriores</a></li>
+                        <li class="page-scroll"><a href="#intro">Objetivos</a></li>
+                        <li class="page-scroll"><a href="#video">Promocional</a></li>
+                        <li class="page-scroll"><a href="#services">Prototipo 5to</a></li>
+                        <li class="page-scroll"><a href="#documento5">Documentación</a></li>
+                        <li class="page-scroll"><a href="#sensoriños">Sensores TR</a></li>
+                        <li class="page-scroll"><a href="#real">Codigo ESP32</a></li>
+                        
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+    <!-- End Header -->
+
+    <!-- Main content -->
+    <main id="main" class="site-main">
+
+        <!-- Hello section -->
+		<section class="site-section section-hello" id="intro">
+			<div class="container">
+				<h2>OBJETIVOS </h2>
+				<p class="section-subtitle"><span>Especificos</span></p>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="main-service text-right">
+							<div class="rectangle">
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</div><!-- /.rectangle -->
+							<h3>Objetivo Especifico # 1 & 2</h3>
+							<p>1. Diseñar la arquitectura electrónica de Security Jacket mediante la integración del ESP32
+                                 con los sensores destinados a la adquisición de variables de movimiento, fuerza y ubicación.
+                                 <br>
+                                 <br>
+                                2.Implementar el sistema de medición de fuerza, utilizando una galga extensiométrica,
+                                 un puente de Wheatstone y el módulo HX711.</p>
+						</div><!-- /.main-service -->
+                        <div class="main-service text-right">
+                            <div class="rectangle">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                            <h3>Objetivo Especifico #  3 & 4</h3>
+                            <p>3. Realizar una calibración preliminar de la medición de fuerza,
+                                 mediante la aplicación de valores conocidos y el registro de las lecturas
+                                obtenidas por el sistema.
+                                <br>
+                                <br>
+                                4. Diseñar la arquitectura de comunicación IIoT, considerando ESP-NOW,
+                                Wi-Fi y MQTT como mecanismos para transportar la información generada por el sistema.
+                            </p>
+                        </div><!-- /.main-service -->
+					</div>
+					<div class="col-sm-4">
+						<div class="big-rectangle">
+							<img src="assets/img/Logo.svg" width="130px" height="130px">
+						</div><!-- /.big-rectangle -->
+					</div>
+					<div class="col-sm-4">
+                        <div class="main-service text-left">
+                            <div class="rectangle">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                            <h3>Objetivo Especifico # 5</h3>
+                            <p>5. Realizar posteriormente la calibración de la galga extensiométrica mediante valores conocidos,
+                                con el fin de establecer una relación entre la magnitud aplicada y la señal obtenida por el sistema 
+                
+                        </div><!-- /.main-service -->
+						<div class="main-service text-left">
+							<div class="rectangle">
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</div><!-- /.rectangle -->
+							<h3>Objetivo Especifico # 6</h3>
+							<p>6. Diseñar la estructura de almacenamiento de datos en Firebase Realtime Database, incluyendo variables
+                             de sensores, estado del sistema, configuración e información registrada del usuario.</p></p>
+						</div><!-- /.main-service -->
+					</div>
+				</div>
+			</div>
+		</section><!-- /.section-hello -->
+        <!-- End Hello section -->
+
+        <!-- Quote section -->
+		<section class="section-background section-quote background-overlay text-center" id="objgeneral">
+			<div class="container">
+                <h2><p>Objetivo General</p></h2>
+				<p>Desarrollar progresivamente durante el programa 
+                académico un sistema de chaqueta inteligente para motociclistas, 
+                integrando tecnologías de instrumentación, electrónica, procesamiento de datos,
+                comunicación de Internet de las Cosas, con el propósito de obtener y gestionar
+                información relacionada con eventos de movimiento, impacto y accidentes,
+                consolidando durante los tres semestres siguientes las etapas de diseño,
+                integración, comunicación, validación y documentación del prototipo. </p>
+			</div>
+		</section><!-- /.section-quote -->
+        <!-- End Quote section -->
+
+        <section class="site-section section-reviews text-center">
+            <div class="container">
+                <h2>Audiovisuales</h2>
+                <p class="section-subtitle"><span>Material Audiovisual de Security Jacket</span></p>
+            </div>
+
+            <div class="blue-bg">
+                <div class="container" id="video">
+                    <div class="review-carousel">
+                        <!-- matriz -->
+                        <div class="review">
+                            <div class="rectangle">
+                            </div>
+                            <h4 style="color: white;">Promocional 5to Trimestre</h4>
+                                <p><iframe width="560" height="315" src="https://youtube.com/shorts/ViTFQ9AnYR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+                                <p>El video introductorio al proyecto Security Jacket correspondiente al quinto semestre, 
+                                    cuenta con venta al publico del proyecto</p>
+                        </div><!-- /.review -->
+                        <!-- cronograma -->
+                        <div class="review">
+                            <div class="rectangle">   
+                            </div>
+                            <h4 style="color: white;">Promocional 4to Trimestre</h4>
+                                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/c8ysX7USNic?si=WtA8vjbksEHTL11G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+                                <p>El video introductorio al proyecto Security Jacket correspondiente al cuarto semestre, 
+                                    cuenta con la narración correspondiente a los integrantes del equipo y planteamiento de forma resumida del proyecto.</p>
+                            </div><!-- /.review-author -->
+                        </div><!-- /.review -->
+                    </div><!-- /.review-carousel -->
+                </div>
+            </div>
+        </section><!-- /.section-reviews -->
+        <!-- End Reviews section -->
+
+        <!-- Services section -->
+        <section class="site-section section-services" id="services">
+
+            <div class="container-fluid">
+                <h2>Prototipo presentable para 5to Semestre</h2>
+                <p class="section-subtitle"><span>Panteamiento</span></p>
+            </div>
+
+            <div class="container">
+
+                <div class="carousel slide" id="services-carousel">
+
+                    <div class="item-controls text-center">
+                        <a href="#services-carousel" class="left btn carousel-control" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </a>
+                        <a href="#services-carousel" class="right btn carousel-control" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </div><!-- /.item-controls -->
+
+                    <div class="carousel-indicators nav-tabs text-center">
+                        <a data-target="#services-carousel" href="#" data-slide-to="0" class="active">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <div class="icon-box">
+                                            <i class="fa fa-laptop"></i>
+                                        </div>
+                                    </div>
+                                    <p class="hidden-xs">Prototipo 5to semestre</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="1">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <div class="icon-box">
+                                            <i class="fa fa-rss"></i>
+                                        </div>
+                                    </div>
+                                    <p class="hidden-xs">Sensores</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="2">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <div class="icon-box">
+                                            <i class="fa fa-sitemap"></i>
+                                        </div>
+                                    </div>
+                                    <p class="hidden-xs">Arquitectura</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="3">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <div class="icon-box">
+                                            <i class="fa fa-map"></i>
+                                        </div>
+                                    </div>
+                                    <p class="hidden-xs">Diagramas</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="4">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <div class="icon-box">
+                                            <i class="fa fa-cloud-upload"></i>
+                                        </div>
+                                    </div>
+                                    <p class="hidden-xs">Firebase</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><!-- /.carousel-indicators -->
+                        
+                           
+                    <div class="carousel-inner">
+                        <!-- Item 1 -->   
+                        <div id="item1" class="item tab-pane active">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Avance de 5to Semestre</h3>
+                                        <p>En esta fase del proyecto se llevó a cabo la integración del sistema electrónico avanzado y la transmisión
+                                            inalámbrica de datos de la chaqueta. En primer lugar, se acondicionó el espacio interno para ubicar la
+                                            tarjeta ESP32, conectada al acelerómetro MPU6050 para la detección de impactos, al módulo HX711 junto a
+                                            la celda de carga para medir la fuerza aplicada, y al módulo GPS NEO-6M para el posicionamiento geográfico
+                                            en tiempo real, asegurando que todos los circuitos quedaran protegidos y firmes dentro de la estructura textil.
+                                            <br>
+                                            La tarjeta ESP32 incorpora un código optimizado que procesa las lecturas de los sensores y las coordenadas del
+                                            GPS, las estructura en formato JSON y realiza envíos automáticos mediante peticiones HTTP seguras hacia la
+                                            base de datos en la nube de Firebase Realtime Database. Esto permite almacenar la información de los eventos y
+                                            la ubicación exacta de forma instantánea, facilitando su visualización en un dashboard de monitoreo web para
+                                            los servicios de emergencia o seguimiento, tal como se muestra en la siguiente imagen.
+                                            <br>
+                                            Esta arquitectura robusta consolida una comunicación estable, segura y fluida entre el hardware distribuido en
+                                            la chaqueta y la plataforma en la nube, permitiendo una respuesta integral ante cualquier eventualidad en
+                                            carretera.</p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="assets/img/fotoprototipo.jpg" class="img-responsive" alt="" style="width: 500px;">
+                                    <br><br>
+                                    <center><img src="assets/img/wokwi.png" class="img-responsive" alt="" style="width: 250px;"></center>
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 2 -->   
+                        <div id="item2" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Sensores fundamentales</h3>
+                                        <p>Acelerómetro MPU6050: Es el sensor inercial encargado de medir la aceleración lineal en los tres ejes
+                                        espaciales ($X, Y, Z$). Su función principal en el sistema es detectar movimientos bruscos, caídas,
+                                        impactos o colisiones en tiempo real para activar el estado de alerta</p>
+                                       
+                                        <p>Celda de carga con módulo HX711:
+                                        Funciona como un sistema de medición de fuerza mediante una galga extensiométrica. Su propósito es
+                                        registrar la tensión, presión o fuerza aplicada sobre la estructura textil de la chaqueta, permitiendo
+                                        identificar golpes directos o compresión.</p>
+                                       
+                                        <p>Módulo GPS NEO-6M: Es el encargado de captar las señales de
+                                        los satélites para obtener las coordenadas geográficas de posición. Su función dentro del sistema es
+                                        proporcionar la latitud y longitud en tiempo real para que, en caso de un impacto o emergencia, se
+                                        conozca la ubicación exacta del usuario.
+
+                                        <p>Tarjeta ESP32: Es el microcontrolador principal y el cerebro
+                                        del sistema. Se encarga de leer constantemente los datos de todos los sensores anteriores,
+                                        procesarlos, estructurarlos en formato JSON y transmitirlos de forma inalámbrica mediante la
+                                        red Wi-Fi hacia la base de datos y el dashboard de monitoreo web</p>
+                                    </div></p>
+                                </div>
+                                 <div class="cuadricula-sensores">
+    <div class="fila-img"><img src="assets/img/esp.jpg" alt="" style="width: 100px;">
+        <p><center> ESP32</center></p></div>
+    <div class="fila-img"><img src="assets/img/mpu.jpg" alt="" style="width: 100px;">
+    <p><center>MPU6050</center></div>
+    <div class="fila-img"><img src="assets/img/HX711.jpg" alt="" style="width: 100px;">
+    <p><center>HX711</center></div>
+    <div class="fila-img"><img src="assets/img/Gps neo.jpg" alt="" style="width: 100px;">
+        <p><center>GPS</center></div>
+</div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 3 -->   
+                        <div id="item3" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Arquitectura IoT y Capas de Comunicación </h3>
+                                        <p>
+                                        El sistema Security Jacket se estructura mediante una arquitectura IoT robusta que permite integrar la adquisición de información,
+                                        el procesamiento local, la comunicación inalámbrica y el almacenamiento de datos en la nube. </p> 
+                                        <p>-	Capa de Percepción
+                                        Corresponde a la adquisición de datos del entorno y del estado del motociclista a través de los sensores integrados en la chaqueta:
+                                        MPU6050, Celda de carga modificada + Puente de Wheatstone + HX711, Módulo GPS, Interfaces de conexión. </p>
+                                        <p>-	Capa de Procesamiento (Edge Computing)
+                                        En esta capa se encuentra la tarjeta ESP32, encargada de centralizar la lectura y el procesamiento local de las señales provenientes
+                                        de todos los sensores. El microcontrolador analiza los valores de aceleración y fuerza, identifica condiciones críticas asociadas a 
+                                        un posible accidente y prepara la información estructurada para su posterior transmisión.</p>
+                                                                                                          
+                                           
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                        <p>-	 Capa de Red
+                                        Esta capa facilita la comunicación inalámbrica entre los dispositivos de campo y el nodo central de la red. Se plantea el uso del
+                                        protocolo ESP-NOW, el cual permite establecer enlaces directos y de alta velocidad entre dispositivos ESP32 sin depender obligatoriamente
+                                        de un enrutador Wi-Fi tradicional.</p>
+                                        <p>-	 Capa de Transporte y Servicios
+                                        Gestiona el flujo de datos hacia Internet y los servidores externos. Se emplea conectividad Wi-Fi junto con el protocolo de mensajería
+                                         MQTT, el cual resulta altamente eficiente gracias a su modelo de publicación/suscripción, permitiendo el envío ágil de eventos y
+                                        variables del sistema hacia un broker central.</p>
+                                        <p>-	Capa de Aplicación
+                                        Corresponde a los servicios finales orientados al almacenamiento, consulta y visualización de la información. El sistema utiliza
+                                        Firebase Realtime Database para albergar de manera centralizada las lecturas en la nube, permitiendo consultar los datos del
+                                        usuario y del estado de la chaqueta en tiempo real a través de una interfaz web de monitoreo accesible para los servicios de emergencia.</p>
+                                        <br>
+                                    <img src="assets/img/ciclo.jpg" class="img-responsive" style="width: 500px;">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 4 -->   
+                        <div id="item4" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Diagrama Electronico Security Jacket</h3>
+                                        <br>
+                                    <img src="assets/img/diagrama electronico.png" class="img-responsive" style="width: 500px;">
+                                    <br>
+                                           
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                   <div class="service-info">
+                                        <h3 class="service-title">Diagrama P&ID Para SECURITY JACKET</h3>
+                                        <br>
+                                    <img src="assets/img/p&id.png" class="img-responsive" style="width: 500px;">
+                                    <br>
+                                           
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 5 -->   
+                        <div id="item5" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Trabajo con Firebase</h3>
+                                        <p>Migración a la Nube (Adiós a XAMPP): Se eliminó la arquitectura local basada en PHP y XAMPP, reemplazándola por Firebase Realtime Database
+                                        para que la tarjeta ESP32 se comunique de forma directa, estable y segura con la nube mediante la API REST.</p>
+
+                                        <p>Definición de la Ruta de Datos (FIREBASE_PATH): Se estableció una estructura de directorios virtuales en formato JSON dentro de la base de 
+                                        datos (por ejemplo, /project/sensores/lecturaActual.json) para que los datos de la chaqueta se almacenen y se actualicen en tiempo real.</p>
+
+                                        <p>Autenticación Anónima Segura: Se implementó un sistema de inicio de sesión anónimo utilizando la API de Google (identitytoolkit.googleapis.com),
+                                        permitiendo a la ESP32 obtener credenciales temporales (idToken y refreshToken) necesarias para autorizar las peticiones HTTPS.</p>
+
+                                        <p>Configuración de Reglas de Acceso: Se ajustaron las reglas en la consola de Firebase Realtime Database para permitir operaciones
+                                        de lectura y escritura durante la fase de pruebas del prototipo.</p>
+                                        <p>Envío Periódico de Datos: Se programó la tarjeta ESP32 para empaquetar las lecturas de los sensores (como el acelerómetro MPU6050 y
+                                        la celda de carga HX711) en formato JSON y enviarlas automáticamente cada pocos segundos mediante peticiones PUT seguras hacia la nube</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="assets/img/firebase.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                                                <!-- Item 4 -->   
+                                                <div id="item4" class="item tab-pane">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <div class="service-info">
+                                                                <h3 class="service-title">Tecnologia a usar</h3>
+                                                      
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <img src="assets/img/tecnologias-2.jpg" class="img-responsive" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div><!-- /.item -->
+                    </div><!-- /.carousel-inner -->
+                </div><!-- /.carousel -->
+            </div>
+        </section><!-- /.section-services -->
+        <!-- End Services section -->
+
+        <!-- Reviews section -->
+        <section class="site-section section-reviews text-center" id="documento5">
+            <div class="container">
+                <h2>Dcumentación</h2>
+                <p class="section-subtitle"><span>5to Semestre</span></p>
+            </div>
+
+           <div class="blue-bg">
+    <div class="container">
+        <div class="review-carousel">
+            <!-- matriz -->
+            <div class="review">
+                <div class="rectangle" style="display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                    <!-- Ícono de libro en color blanco y tamaño grande -->
+                    <i class="fa fa-book" style="font-size: 50px; color: white;"></i>
+                </div>
+                <br>
+                <br>
+                <h4 style="color: white;">Documento íntegro Security Jacket</h4>
+                <p>Información detallada</p>
+                    
+                <div class="review-author">
+                    <a href="https://docs.google.com/spreadsheets/d/1X6237Z7RWBxZRqTp2OJe6FsgAXU8ZgmA/edit?usp=sharing&ouid=105373372351480907871&rtpof=true&sd=true" class="btn-matriz">Visualizar</a>
+                </div><!-- /.review-author -->
+            </div><!-- /.review -->
+                        <!-- cronograma -->
+                        <div class="review">
+                            <div class="rectangle">
+                                
+                                <img src="assets/img/Matrices de riesgo.PNG" class="img-res" alt="">
+                            </div>
+                                <br>
+                                <br>
+                                <h4 style="color: white;">Matriz de Riesgos</h4>
+                                <p>Información detallada sobre la matriz</p>
+                                
+                                       
+                            <div class="review-author">
+                                <a href="Documentos.html#about" class="btn-matriz">Visualizar</a>
+                                
+                            </div><!-- /.review-author -->
+                        </div><!-- /.review -->
+                    </div><!-- /.review-carousel -->
+                </div>
+            </div>
+        </section><!-- /.section-reviews -->
+        <!-- End Reviews section -->
+
+        <!-- Team section -->
+        <section class="site-section section-team" id="team">
+            <div class="container">
+                <h2><Em>EQUIPO DE SECURITY JACKET</Em></h2>
+                <p class="section-subtitle"><span>Integrantes del Proyecto</span></p>
+                
+                <div class="team">
+                    <div class="row">   
+                        <!-- Team Member --> 
+                        <div class="col-md-4 col-xs-12">
+                            <div class="team-member">
+                                <div class="flipper">
+                                    <div class="team-member-front">
+                                        <div class="team-member-thumb">
+                                            <img src="assets/img/jhon.png" class="img-res" alt="">
+                                        </div>  <!-- /.team-member-thumb -->
+                                        <p class="team-member-front-name">JHON JAIRO BRANGO VELASQUEZ</p>
+                                    </div><!-- /.team-member-front -->
+                                    <div class="team-member-back">
+                                        <div class="team-member-info">
+                                            <h3 class="team-member-back-name">JHON JAIRO BRANGO VELASQUEZ</h3>
+                                            <p class="team-member-back-position">Integrante # 1</p>
+                                            <p class="team-member-back-info">Estudiante de Tecnologia de Automatización Industrial </p>
+                                            <div class="social-icons small">
+                                                <a href="#" class="rectangle"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" class="rectangle"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" class="rectangle"><i class="fa fa-linkedin"></i></a>
+                                                <a href="#" class="rectangle"><i class="fa fa-dribbble"></i></a>
+                                            </div>
+                                        </div><!-- /.team-member-back-info -->
+                                    </div><!-- /.team-member-back -->  
+                                </div>         
+                            </div><!-- /.team-member -->       
+                        </div>
+                        <!-- Team Member --> 
+                        <div class="col-md-4 col-xs-12">
+                            <div class="team-member">
+                                <div class="flipper">
+                                    <div class="team-member-front">
+                                        <div class="team-member-thumb">
+                                            <img src="assets/img/adrian.png" class="img-res" alt="">
+                                        </div>  <!-- /.team-member-thumb -->
+                                        <p class="team-member-front-name">ARIAN JESUS DUARTE AVILA</p>
+                                    </div><!-- /.team-member-front -->
+                                    <div class="team-member-back">
+                                        <div class="team-member-info">
+                                            <h3 class="team-member-back-name">ARIAN JESUS DUARTE AVILA</h3>
+                                            <p class="team-member-back-position">Integrante # 2</p>
+                                            <p class="team-member-back-info">Estudiante de Tecnologia de Automatización Industrial</p>
+                                            <div class="social-icons small">
+                                                <a href="#" class="rectangle"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" class="rectangle"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" class="rectangle"><i class="fa fa-linkedin"></i></a>
+                                                <a href="#" class="rectangle"><i class="fa fa-dribbble"></i></a>
+                                            </div>
+                                        </div><!-- /.team-member-back-info -->
+                                    </div><!-- /.team-member-back -->  
+                                </div>         
+                            </div><!-- /.team-member -->       
+                        </div>
+                        <!-- Team Member --> 
+                        <div class="col-md-4 col-xs-12">
+                            <div class="team-member">
+                                <div class="flipper">
+                                    <div class="team-member-front">
+                                        <div class="team-member-thumb">
+                                            <img src="assets/img/david.png" class="img-res" alt="">
+                                        </div>  <!-- /.team-member-thumb -->
+                                        <p class="team-member-front-name">DAVID PAEZ MARTINEZ</p>
+                                    </div><!-- /.team-member-front -->
+                                    <div class="team-member-back">
+                                        <div class="team-member-info">
+                                            <h3 class="team-member-back-name">DAVID PAEZ MARTINEZ</h3>
+                                            <p class="team-member-back-position">Integrante # 3</p>
+                                            <p class="team-member-back-info">Estudiante de Tecnologia de Automatización Industrial </p>
+                                            <div class="social-icons small">
+                                                <a href="#" class="rectangle"><i class="fa fa-facebook"></i></a>
+                                                <a href="#" class="rectangle"><i class="fa fa-twitter"></i></a>
+                                                <a href="#" class="rectangle"><i class="fa fa-linkedin"></i></a>
+                                                <a href="#" class="rectangle"><i class="fa fa-dribbble"></i></a>
+                                            </div>
+                                        </div><!-- /.team-member-back-info -->
+                                    </div><!-- /.team-member-back -->  
+                                </div>         
+                            </div><!-- /.team-member -->       
+                        </div>
+                        <!-- Team Member --> 
+  
+                        </div>
+                    </div>
+                </div><!-- /.team -->   
+            </div>
+        </section><!-- /.section-team -->
+        <!-- End Team section -->
+
+        <!-- Me section --> 
+
+    <section class="section-background section-twitter background-overlay text-center" id="sensoriños">
+            <div class="container" id="documentacion">
+            
+                <p><h2 style="color: white;">Sensores</h2></p>
+                <a href="sensores.html" class="btn btn-inverted">Sensores en tiempo real</a>
+            </div>
+        </section><!-- /.section-twitter-->
+        <!-- End Twitter section -->
+
+        <!-- Contacts section --> 
+        <section class="site-section section-contact" id="contact">
+            <div class="container-fluid" id="real">
+                <h2> Codigo Prototipo 5to Semestre</h2>
+                <p class="section-subtitle"><span>desarrollado en Arduino IDE</span></p>
+            </div>
+            <div class="container">
+              <style>
+.code-container {
+    background-color: #1e1e1e !important; /* Fondo negro / gris oscuro tipo VS Code */
+    color: #dcdcdc !important;            /* Color del texto general */
+    padding: 20px;
+    border-radius: 8px;                   /* Bordes redondeados profesionales */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    overflow-x: auto;                     /* Barra horizontal si el código es largo */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    margin: 20px 0;
+    text-align: left;                     /* Asegura que el código esté alineado a la izquierda */
+}
+
+.code-container code {
+    color: #000000;                       /* Color destacado para las variables o funciones */
+    background-color: transparent !important;
+}
+</style>
+
+<!-- Contenedor del código en página -->
+<div class="code-container">
+    <pre><code>
+// ENTRADAS
+#include "WiFi.h"
+#include "WiFiClientSecure.h"
+#include "HTTPClient.h"
+#include "ArduinoJson.h"
+#include "Wire.h"
+#include "Adafruit_MPU6050.h"
+#include "Adafruit_Sensor.h"
+#include "HX711.h"
+#include "TinyGPS++.h"
+
+
+// 1. CONFIGURACIÓN WIFI
+
+#define WIFI_SSID       "xxxxxxxx"
+#define WIFI_PASSWORD   "xxxxxxxx"
+
+
+// 2. CONFIGURACIÓN FIREBASE (API REST)
+
+#define API_KEY "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+#define DATABASE_URL "https://security-jacket-pt-default-rtdb.firebaseio.com"
+#define FIREBASE_SIGNUP_URL "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key="
+#define FIREBASE_REFRESH_URL "https://securetoken.googleapis.com/v1/token?key="
+#define FIREBASE_PATH "/project/sensores/lecturaActual.json"
+
+
+// 3. CONFIGURACIÓN DE PINES
+
+#define HX711_DOUT 5
+#define HX711_SCK  18
+#define GPS_RX 16
+#define GPS_TX 17
+
+
+// 4. OBJETOS Y VARIABLES GLOBALES
+
+Adafruit_MPU6050 mpu;
+HX711 scale;
+TinyGPSPlus gps;
+
+float accX = 0.0, accY = 0.0, accZ = 0.0;
+float fuerza = 0.0;
+float latitud = 0.0, longitud = 0.0;
+
+// Umbral de fuerza (Ajustado para los valores en miles del HX711)
+const float UMBRAL_FUERZA = 50000.0; 
+bool alertaImpacto = false;
+
+// Variables de autenticación anónima en Firebase
+String idToken = "";
+String refreshToken = "";
+unsigned long proximaRenovacion = 0;
+bool firebaseAutenticado = false;
+
+
+// 5. CONEXIÓN WIFI
+
+void conectarWiFi() {
+  Serial.println();
+  Serial.print("Conectando a Wi-Fi: ");
+  Serial.println(WIFI_SSID);
+
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+
+  unsigned long inicio = millis();
+  while (WiFi.status() != WL_CONNECTED && millis() - inicio < 20000) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println();
+  if (WiFi.status() == WL_CONNECTED) {
+    Serial.println("Wi-Fi conectado.");
+    Serial.print("Dirección IP: ");
+    Serial.println(WiFi.localIP());
+  } else {
+    Serial.println("No fue posible conectar a Wi-Fi.");
+  }
+}
+
+
+// 6. AUTENTICACIÓN ANÓNIMA EN FIREBASE
+
+bool autenticarFirebase() {
+  if (WiFi.status() != WL_CONNECTED) return false;
+
+  WiFiClientSecure clienteSSL;
+  clienteSSL.setInsecure(); // Omitir verificación de certificado para pruebas
+
+  HTTPClient https;
+  String url = String(FIREBASE_SIGNUP_URL) + API_KEY;
+
+  if (!https.begin(clienteSSL, url)) return false;
+
+  https.addHeader("Content-Type", "application/json");
+  String cuerpo = "{\"returnSecureToken\":true}";
+  int codigoHTTP = https.POST(cuerpo);
+  String respuesta = https.getString();
+  https.end();
+
+  if (codigoHTTP != 200) {
+    Serial.print("Error autenticando Firebase. HTTP: ");
+    Serial.println(codigoHTTP);
+    return false;
+  }
+
+  DynamicJsonDocument doc(4096);
+  if (deserializeJson(doc, respuesta)) return false;
+
+  idToken = doc["idToken"].as<String>();
+  refreshToken = doc["refreshToken"].as<String>();
+  String duracion = doc["expiresIn"].as<String>();
+
+  if (idToken.length() == 0 || refreshToken.length() == 0) return false;
+
+  unsigned long segundos = duracion.toInt();
+  if (segundos == 0) segundos = 3600;
+
+  proximaRenovacion = millis() + (segundos - 120) * 1000UL;
+  firebaseAutenticado = true;
+  Serial.println("Autenticación anónima en Firebase exitosa.");
+  return true;
+}
+
+
+// 7. ENVIAR DATOS A FIREBASE (API REST)
+
+bool enviarDatosFirebase() {
+  if (WiFi.status() != WL_CONNECTED || !firebaseAutenticado) return false;
+
+  WiFiClientSecure clienteSSL;
+  clienteSSL.setInsecure();
+
+  HTTPClient https;
+  String url = String(DATABASE_URL) + FIREBASE_PATH + "?auth=" + idToken;
+
+  if (!https.begin(clienteSSL, url)) return false;
+
+  https.addHeader("Content-Type", "application/json");
+
+  DynamicJsonDocument doc(1024);
+  doc["fuerza"] = fuerza;
+  doc["aceleracionX"] = accX;
+  doc["aceleracionY"] = accY;
+  doc["aceleracionZ"] = accZ;
+  doc["alertaImpacto"] = alertaImpacto ? "¡SI!" : "Normal";
+  
+  if (gps.location.isValid()) {
+    doc["latitud"] = latitud;
+    doc["longitud"] = longitud;
+  } else {
+    doc["latitud"] = 0.0;
+    doc["longitud"] = 0.0;
+  }
+  
+  doc["tiempoMillis"] = millis();
+
+  String datosJSON;
+  serializeJson(doc, datosJSON);
+
+  int codigoHTTP = https.PUT(datosJSON);
+  https.end();
+
+  if (codigoHTTP == 200) {
+    Serial.println("Datos y GPS enviados correctamente a Firebase vía REST.");
+    return true;
+  } else {
+    Serial.print("Error enviando datos. HTTP: ");
+    Serial.println(codigoHTTP);
+    if (codigoHTTP == 401 || codigoHTTP == 403) {
+      firebaseAutenticado = false;
+      autenticarFirebase();
+    }
+    return false;
+  }
+}
+
+
+// 8. SETUP
+
+void setup() {
+  Serial.begin(115200);
+  Wire.begin(21, 22); // I2C para MPU6050
+
+  conectarWiFi();
+  autenticarFirebase();
+
+  // Inicializar MPU6050 de forma segura
+  if (!mpu.begin()) {
+    Serial.println("¡Advertencia: No se encontró el MPU6050! Continuando...");
+  } else {
+    Serial.println("MPU6050 inicializado correctamente.");
+  }
+
+  scale.begin(HX711_DOUT, HX711_SCK);
+  scale.tare(); // Pone la balanza en cero automáticamente al encender
+  Serial.println("HX711 inicializado y tarado a 0.");
+
+  // Inicializar HX711 (Sin tare() para evitar que se congele en el arranque)
+  scale.begin(HX711_DOUT, HX711_SCK);
+
+  // Inicializar GPS en Serial2
+  Serial2.begin(9600, SERIAL_8N1, GPS_RX, GPS_TX);
+  Serial.println("GPS NEO-6M inicializado en Serial2.");
+  Serial.println("--- Sistema cargado exitosamente. Iniciando Lecturas ---");
+}
+
+
+// 9. LOOP
+// =====================================================
+void loop() {
+  // Procesar continuamente los datos del GPS
+  while (Serial2.available() > 0) {
+    gps.encode(Serial2.read());
+  }
+
+  // Leer MPU6050
+  sensors_event_t aceleracion, g, temp;
+  mpu.getEvent(&aceleracion, &g, &temp);
+  accX = aceleracion.acceleration.x;
+  accY = aceleracion.acceleration.y;
+  accZ = aceleracion.acceleration.z;
+
+  // Leer HX711 (multiplicado por -1 para invertir signo negativo al presionar)
+ if (scale.is_ready()) {
+    // abs() elimina los signos negativos y deja siempre el número en positivo
+    fuerza = abs(scale.get_units(5)); 
+  }
+
+  // --- LA ALERTA SE DISPARA EXCLUSIVAMENTE CON LA GALGA ---
+  alertaImpacto = (fuerza > UMBRAL_FUERZA);
+
+  // Obtener coordenadas si el GPS tiene señal válida
+  if (gps.location.isValid()) {
+    latitud = gps.location.lat();
+    longitud = gps.location.lng();
+  }
+
+  // Imprimir lecturas completas en el Monitor Serie
+  Serial.print("AccX: "); Serial.print(accX);
+  Serial.print(" | AccY: "); Serial.print(accY);
+  Serial.print(" | AccZ: "); Serial.print(accZ);
+  Serial.print(" | Fuerza: "); Serial.print(fuerza);
+  Serial.print(" | Alerta: "); Serial.println(alertaImpacto ? "¡SI!" : "Normal");
+  
+  if (gps.location.isValid()) {
+    Serial.print("GPS -> Lat: "); Serial.print(latitud, 6);
+    Serial.print(" | Lng: "); Serial.println(longitud, 6);
+  } else {
+    Serial.println("GPS buscando satélites...");
+  }
+
+  // Renovar token si está por expirar
+  if (millis() > proximaRenovacion) {
+    autenticarFirebase();
+  }
+
+  // Enviar a Firebase
+  enviarDatosFirebase();
+
+  delay(1000); // Envío continuo cada 1 segundo
+}
+    </code></pre>
+</div>
+                </div>
+            </div>
+        </section><!-- /.section-contact-->
+        <!-- End Contacts section --> 
+        
+        <!-- Social Networks section --> 
+        <section class="section-networks blue-bg">
+            <div class="container">
+                <a href="#" class="rectangle">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#" class="rectangle">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#" class="rectangle">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#" class="rectangle">
+                    <i class="fa fa-youtube-play"></i>
+                </a>
+                <a href="#" class="rectangle">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <a href="#" class="rectangle">
+                    <i class="fa fa-dribbble"></i>
+                </a>
+            </div>
+        </section><!-- /.section-networks-->
+        <!-- End Social Networks section --> 
+
+    </main><!-- /#main -->
+    <!-- End Main content -->
+
+    <!-- Footer --> 
+    <footer id="colophon" class="site-footer">
+
+        <div class="container-fluid">
+
+
+            <div class="page-scroll">
+                <a href="#top" class="rectangle">
+                    <i class="fa fa-angle-double-up"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container text-center">
+            <p class="copyright">&copy; <a href="#" target="_blank">Security Jacket</a></p>
+        </div>
+
+    </footer><!-- /#footer -->
+    <!-- End Footer --> 
+
+    <!-- Modals -->
+    <div id="portfolioItem1" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="assets/img/portfolio-1.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Project title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem2" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="assets/img/portfolio-2.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Project title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem3" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="assets/img/portfolio-4.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Project title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem4" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="assets/img/portfolio-3.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Project title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem5" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="assets/img/portfolio-5.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Project title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem6" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="assets/img/portfolio-6.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Project title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem7" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="assets/img/portfolio-7.jpg" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Project title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn">Visit Page</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery core js | Do not Delete -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap core js | Do not Delete -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap progressbar JS -->
+    <script src="assets/js/bootstrap-progressbar.min.js"></script>
+
+    <!-- Count To JS -->
+    <script src="assets/js/jquery.countTo.min.js"></script>
+
+    <!-- Easing JS -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!-- Shuffle JS -->
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- Touchswipe JS -->
+    <script src="assets/js/touchswipe.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+  
+</body>
+</html>
